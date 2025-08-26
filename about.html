@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about us</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- link for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+<body class="flex flex-col w-full h-screen bg-[#006400] text-[#FFD700]">
+
+  <header class="flex items-center  px-10 py-5  fixed top-0 left-0 w-full z-50 bg-[#013220] gap-[150px]">
+      
+         <a href="index.html">
+        <h3 style="font-family: 'Dancing Script',cursive" class="font-bold text-4xl text-green-500">Chop Chop</h3>
+      </a>
+      <!-- for medium screens and large screens -->
+      <nav class="hidden md:flex flex text-red-500 gap-[150px] text-md">
+        <a href="index.html" class="hover:underline decoration-1">Home</a>
+        <a href="about.html" class="hover:underline decoration-1">About Us</a>
+        <a href="contact.html" class="hover:underline decoration-1">Contact Us</a>
+       
+        <div  class=" relative flex flex-col items-center Justify-Center">
+           <button id="dropDownBtn" class="hover:underline decoration-1">Menu</button>
+
+          <nav id="dropDownMenu" class=" absolute mt-2  top-full text-center flex flex-col font-bold items-center  w-40 text-xs hidden z-40 md:items-center text-xs bg-white">
+            <a href="african.html" class="hover:underline">African Dishes</a>
+            <a href="continental.html" class="hover:underline">Continental Dishes</a>
+            <a href="chinese.html" class="hover:underline">Chinese Dishes</a>
+            <a href="italian.html" class="hover:underline">Italian Dishes</a>
+          </nav>
+          
+        </div>
+      </nav>
+      <!-- for small screens -->
+      
+      <div class="flex flex-col md:hidden relative ">
+        <button id="hamburger" class="text-red-500 md:hidden ">
+          &#9776;
+        </button>
+       
+      </div>
+        
+    </header>
+
+     <!-- menu for smaller screens -->
+         
+        <nav id="mobileMenu" class="hidden absolute top-[80px] bg-white items-center w-full h-auto flex flex-col text-red-500 gap-1 text-md text-center justify-center z-40">
+        <a href="index.html" class="hover:underline decoration-1">Home</a>
+        <a href="about.html" class="hover:underline decoration-1">About Us</a>
+        <a href="contact.html" class="hover:underline decoration-1">Contact Us</a>
+       
+        <div  class=" flex flex-col">
+          <button id="mobiledropDownBtn" class="hover:underline decoration-1">Menu</button>
+
+       
+           
+          <nav id="mobiledropDownMenu" class=" flex flex-col text-sm font-bold items-center hidden  md:items-center text-xs">
+            <a href="african.html" class="hover:underline">African Dishes</a>
+            <a href="continental.html" class="hover:underline">Continental Dishes</a>
+            <a href="chinese.html" class="hover:underline">Chinese Dishes</a>
+            <a href="italian.html" class="hover:underline">Italian Dishes</a>
+          </nav>
+          
+        </div>
+      </nav>
+
+      <section class="flex sm:flex flex-col text-[#FFD700] justify-between mt-32 px-20 lg:flex-row">
+        
+      <div>
+        <h1 class="text-4xl font-bold">
+      About US
+      </h1>
+
+        <p class="py-5 text-sm max-w-sm text-justify">
+      Chop Chop is an African based resturant that provides various dishes. Not only African dishes but also continental dishes as well as Chinese and Italian dishes at very affordable prices. Our priority is the satisfaction of our customers.
+      </p>
+
+       <h1 class="text-xl font-bold mt-10">
+      Our Mission
+      </h1>
+  
+        <p class="py-2 text-sm max-w-sm text-justify">
+          At ChopChop, our mission is to create unforgettable dining experiences by offering a perfect blend of African, Continental, Chinese, and Italian cuisines. We aim to serve high-quality meals prepared with passion, ensuring every guest enjoys not just food, but a journey of taste and satisfaction.
+      </p>
+      </div>
+   
+        <div class="flex flex-col">
+          <h1 class="text-xl font-bold mt-5">
+            Our Story
+        </h1>
+
+        <p class="py-2 text-sm max-w-sm text-justify">
+         The inspiration of this resturant came from a journey the CEO made to India. He had issues locating resturants that had nigerian food. Most of the resturants had only India's own local dishes. It was at that point he had the idea of having his own resturant in his home Nigera. He came up with the idea of a resturant that provided several dishes both continental and intercontinenteal so that travellers would be able to eat their local dishes here and feel at home.
+      </p>
+        </div>
+      </section>
+
+      <section class="flex sm:flex flex-col lg:flex-row  mt-10 items-center py-20 text-text-[#FFD700] justify-between gap-10 px-10  items-center text-white">
+        <div class="flex-1 w-96 h-auto rounded-t-xl bg-[#013220] p-5 ">
+          <img src="headshot1.jpg" class="h-60 w-full rounded-t-xl">
+          <h1 class="px-1 font-bold">CEO</h1>
+          <h1 class="py-2 px-1">John Mark</h1>
+        </div>
+          
+
+        <div class="flex-1  w-96 h-auto rounded-t-xl bg-[#013220] p-5">
+          <img src="headshot3.jpg" class="h-60 w-full object-cover rounded-t-xl">
+           <h1 class="px-1 font-bold">Managing Director</h1>
+          <h1 class="py-2 px-1">Chriatabel James</h1>
+        </div>
+
+        <div class="flex-1  w-96 h-auto rounded-t-xl bg-[#013220] p-5 ">
+          <img src="headshot2.jpg" class="h-60 w-full object-cover rounded-t-xl">
+          <h1 class="px-1 font-bold">CO-CEO</h1>
+          <h1 class="py-2 px-1">James Matthew</h1>
+          
+        </div>
+      </section>
+
+      <section class="flex flex-col py-10 px-20 items-center lg:items-end lg:text-right">
+        <div class="flex flex-col items-center lg:items-start">
+          <h1 class="text-xl font-bold">
+            Our Achievements
+        </h1>
+        <p class="py-2 text-md max-w-xl text-justify">
+          Since opening our doors, ChopChop has proudly served hundreds of happy customers with authentic African, Continental, Chinese, and Italian dishes. We have become a favorite spot for families, friends, and food lovers who enjoy variety and quality under one roof. Our greatest achievement is the trust and loyalty of our customers, who continue to choose us as their go-to dining destination. Every smile, every compliment, and every returning guest is a milestone we celebrate.
+        </p>
+        </div>
+        
+      </section>
+
+      <section class="flex flex-col px-20 ">
+        <div class="flex flex-col items-center lg:items-start">
+          <h1 class="text-xl font-bold">
+            Our Values
+            
+          </h1>
+          <ul class="list-disc ml-5 py-5 text-md">
+            <li>
+              Quality & freshness
+            </li>
+          <li>
+            Cultural Variety
+          </li>
+          <li>
+            Affordability
+          </li>
+          <li>
+            Customer Satisfaction
+          </li>
+          <li>
+            Authenticity
+          </li>
+          <li>
+            Community Togetherness
+          </li>
+          <li>
+            Innovation
+          </li>
+            </ul>
+        </div>
+      </section>
+
+       <footer class="bg-[#013220] w-full h-auto py-5 px-10 mt-auto grid  lg:grid-cols-4 sm:grid-cols-1 justify-items-center gap-2 text-white" >
+      <div class="flex flex-col">
+        <h3 style="font-family: 'Dancing Script',cursive" class="font-bold text-3xl text-green-500">Chop Chop</h3>
+
+       
+
+        <p class="py-2 text-xs max-w-sm">
+          Follow us on Twitter, Facebook, Instagram and Tiktok
+        </p>
+
+              
+        <div class="flex gap-4 text-md py-10">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-tiktok"></i>
+        </div>
+        
+         <h1 class="font-bold text-lg py-2" >
+        Contact Us
+      </h1>
+
+      <p class="text-sm">
+        chopchop@gmail.com
+      </p>
+        
+      </div>
+
+      
+      <div class="py-10 flex flex-col" >
+        <p class="text-sm underline decoration-1 decoration-red-500 ">
+          https//chopchop.com
+        </p>
+
+        <nav class="flex flex-col text-xs">
+        <a href="index.html" class="hover:underline decoration-1">Home</a>
+        <a href="about.html" class="hover:underline decoration-1">About Us</a>
+        <a href="contact.html" class="hover:underline decoration-1">Contact Us</a>
+
+        
+       
+        <div  class="  flex flex-col">
+           <button id="footerdropDownBtn" class="hover:underline decoration-1 text-left">Menu</button>
+
+          <nav id="footerdropDownMenu" class=" flex flex-col text-xs hidden">
+            <a href="african.html" class="hover:underline">African Dishes</a>
+            <a href="continental.html" class="hover:underline">Continental Dishes</a>
+            <a href="chinese.html" class="hover:underline">Chinese Dishes</a>
+            <a href="italian.html" class="hover:underline">Italian Dishes</a>
+          </nav>
+          
+        </div>
+      </nav>
+        
+      </div>
+
+      <div>
+         
+      <h1 class="font-bold text-md underline decoration-1">
+        Our Services
+      </h1>
+
+      <h1 class=" font-bold text-sm hover:underline decoration-1">
+        Dine-in Service
+      </h1>
+      
+
+      <h1 class="mt- font-bold text-sm hover:underline decoration-1">
+        Takeaway & Packaging
+      </h1>
+      
+
+      <h1 class="mt-2 font-bold text-sm hover:underline decoration-1">
+        Home Delivery
+      </h1>
+      
+
+      <h1 class="mt-2 font-bold text-sm hover:underline decoration-1">
+        Catering Services
+      </h1>
+      
+
+      <h1 class="mt-2 font-bold text-sm hover:underline decoration-1">
+        Special Orders
+      </h1>
+      
+
+      <h1 class="mt-2 font-bold text-sm hover:underline decoration-1">
+        Affordable Meals
+      </h1>
+      
+
+      <h1 class="mt-2 font-bold text-sm hover:underline decoration-1">
+        Online Ordering
+      </h1>
+     
+
+
+    
+      </div>
+
+      <div>
+        <h1 class="font-bold text-md">
+        News Letter
+      </h1>
+      
+      </div>
+      <hr class="col-span-full w-full mt-20">
+      <p class=" col-span-full text-sm text-center w-full">
+        @2025. All rights reserved by princess
+      </p>
+ 
+    </footer>
+
+   
+
+ 
+  <script src="jquery.js"></script>
+  <script>
+     $("#dropDownBtn").click(function(){
+        $("#dropDownMenu").toggleClass("hidden");
+      });
+
+      $("#hamburger").click(function(){
+        $("#mobileMenu").toggleClass("hidden");
+      });
+
+      $("#mobiledropDownBtn").click(function(){
+        $("#mobiledropDownMenu").toggleClass("hidden");
+      });
+
+    
+    $("#image")
+  </script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Italian Dishes</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col bg-[#006400] w-full h-screen text-[#FFD700]  ">
+
+  <header class="flex items-center  px-10 py-5  fixed top-0 left-0 w-full z-50 bg-[#013220] gap-[150px]">
+      
+        <a href="index.html">
+        <h3 style="font-family: 'Dancing Script',cursive" class="font-bold text-4xl text-green-500">Chop Chop</h3>
+      </a>
+      
+      <!-- for medium screens and large screens -->
+      <nav class="hidden md:flex flex text-red-500 gap-[150px] text-md">
+        <a href="index.html" class="hover:underline decoration-1">Home</a>
+        <a href="about.html" class="hover:underline decoration-1">About Us</a>
+        <a href="contact.html" class="hover:underline decoration-1">Contact Us</a>
+       
+        <div  class=" relative flex flex-col items-center Justify-Center">
+           <button id="dropDownBtn" class="hover:underline decoration-1">Menu</button>
+
+          <nav id="dropDownMenu" class=" absolute mt-2  top-full text-center flex flex-col font-bold items-center  w-40 text-xs hidden z-40 md:items-center text-xs bg-white">
+            <a href="african.html" class="hover:underline">African Dishes</a>
+            <a href="continental.html" class="hover:underline">Continental Dishes</a>
+            <a href="chinese.html" class="hover:underline">Chinese Dishes</a>
+            <a href="italian.html" class="hover:underline">Italian Dishes</a>
+          </nav>
+          
+        </div>
+      </nav>
+      <!-- for small screens -->
+      
+      <div class="flex flex-col md:hidden relative ">
+        <button id="hamburger" class="text-red-500 md:hidden ">
+          &#9776;
+        </button>
+       
+      </div>
+        
+    </header>
+
+     <!-- menu for smaller screens -->
+         
+        <nav id="mobileMenu" class="hidden absolute top-[80px] bg-white items-center w-full h-auto flex flex-col text-red-500 gap-1 text-md text-center justify-center z-40">
+        <a href="index.html" class="hover:underline decoration-1">Home</a>
+        <a href="about.html" class="hover:underline decoration-1">About Us</a>
+        <a href="contact.html" class="hover:underline decoration-1">Contact Us</a>
+       
+        <div  class=" flex flex-col">
+          <button id="mobiledropDownBtn" class="hover:underline decoration-1">Menu</button>
+
+       
+           
+          <nav id="mobiledropDownMenu" class=" flex flex-col text-sm font-bold items-center hidden  md:items-center text-xs">
+            <a href="african.html" class="hover:underline">African Dishes</a>
+            <a href="continental.html" class="hover:underline">Continental Dishes</a>
+            <a href="chinese.html" class="hover:underline">Chinese Dishes</a>
+            <a href="italian.html" class="hover:underline">Italian Dishes</a>
+          </nav>
+          
+        </div>
+      </nav>
+
+ 
+  </div>
+  <div class="mt-32">
+    <h1 class="flex font-bold justify-center items-center text-4xl py-10">
+      Italian Dishes
+    </h1>
+
+    
+
+    <section class="flex sm:flex flex-col lg:flex-row  mt-10 items-center  text-text-[#FFD700] justify-between gap-10 px-10  items-center text-white">
+        <div class="flex-1 w-96 h-auto rounded-t-xl bg-[#013220] p-5 ">
+          <img src="italiainimg/pizzamargherita.jpg" class="h-60 w-full rounded-t-xl">
+          <h1 class="px-1 font-bold">Pizza Margherita</h1>
+          <form class="flex flex-col gap-2 w-sm mt-3">
+            <input id="protein" type="text" placeholder="Number of protein" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <input id="plates" type="text" placeholder="Number of plates" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <button id="add" class="items-start bg-[#FFD700] text-[#006400] rounded text-xs p-1 w-1/4">
+              Add to Cart
+            </button>
+          </form>
+        </div>
+          
+
+        <div class="flex-1  w-96 h-auto rounded-t-xl bg-[#013220] p-5">
+          <img src="italiainimg/spaghetticarbonara.jpg" class="h-60 w-full object-cover rounded-t-xl">
+           <h1 class="px-1 font-bold">Spaghetti Carbonara</h1>
+          <form class="flex flex-col gap-2 w-sm mt-3">
+            <input id="protein" type="text" placeholder="Number of protein" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <input id="plates" type="text" placeholder="Number of plates" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <button id="add" class="items-start bg-[#FFD700] text-[#006400] rounded text-xs p-1 w-1/4">
+              Add to Cart
+            </button>
+          </form>
+        </div>
+
+        <div class="flex-1  w-96 h-auto rounded-t-xl bg-[#013220] p-5 ">
+          <img src="africanfoodimg/suya.jpg" class="h-60 w-full object-cover rounded-t-xl">
+          <h1 class="px-1 font-bold">Suya</h1>
+          <form class="flex flex-col gap-2 w-sm mt-3">
+            <input id="protein" type="text" placeholder="Number of protein" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <input id="plates" type="text" placeholder="Number of plates" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <button id="add" class="items-start bg-[#FFD700] text-[#006400] rounded text-xs p-1 w-1/4">
+              Add to Cart
+            </button>
+          </form>
+          
+        </div>
+      </section>
+
+      <section class="flex sm:flex flex-col lg:flex-row  mt-10 items-center py-5 text-text-[#FFD700] justify-between gap-10 px-10  items-center text-white">
+        <div class="flex-1 w-96 h-auto rounded-t-xl bg-[#013220] p-5 ">
+          <img src="africanfoodimg/couscous.jpg" class="h-60 w-full rounded-t-xl">
+          <h1 class="px-1 font-bold">Couscous</h1>
+          <form class="flex flex-col gap-2 w-sm mt-3">
+            <input id="protein" type="text" placeholder="Number of protein" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <input id="plates" type="text" placeholder="Number of plates" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <button id="add" class="items-start bg-[#FFD700] text-[#006400] rounded text-xs p-1 w-1/4">
+              Add to Cart
+            </button>
+          </form>
+        </div>
+          
+
+        <div class="flex-1  w-96 h-auto rounded-t-xl bg-[#013220] p-5">
+          <img src="africanfoodimg/bunnychow.jpg" class="h-60 w-full object-cover rounded-t-xl">
+           <h1 class="px-1 font-bold">Bunny Chow</h1>
+          <form class="flex flex-col gap-2 w-sm mt-3">
+            <input id="protein" type="text" placeholder="Number of protein" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <input id="plates" type="text" placeholder="Number of plates" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <button id="add" class="items-start bg-[#FFD700] text-[#006400] rounded text-xs p-1 w-1/4">
+              Add to Cart
+            </button>
+          </form>
+        </div>
+
+        <div class="flex-1  w-96 h-auto rounded-t-xl bg-[#013220] p-5 ">
+          <img src="africanfoodimg/ugali.jpg" class="h-60 w-full object-cover rounded-t-xl">
+          <h1 class="px-1 font-bold">Ugali</h1>
+         <form class="flex flex-col gap-2 w-sm mt-3">
+            <input id="protein" type="text" placeholder="Number of protein" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <input id="plates" type="text" placeholder="Number of plates" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <button id="add" class="items-start bg-[#FFD700] text-[#006400] rounded text-xs p-1 w-1/4">
+              Add to Cart
+            </button>
+          </form>
+          
+        </div>
+      </section>
+
+       <section class="flex sm:flex flex-col lg:flex-row  mt-10 items-center py-5 text-text-[#FFD700] justify-between gap-10 px-10  items-center text-white">
+        <div class="flex-1 w-96 h-auto rounded-t-xl bg-[#013220] p-5 ">
+          <img src="africanfoodimg/couscous.jpg" class="h-60 w-full rounded-t-xl">
+          <h1 class="px-1 font-bold">Couscous</h1>
+          <form class="flex flex-col gap-2 w-sm mt-3">
+            <input id="protein" type="text" placeholder="Number of protein" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <input id="plates" type="text" placeholder="Number of plates" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <button id="add" class="items-start bg-[#FFD700] text-[#006400] rounded text-xs p-1 w-1/4">
+              Add to Cart
+            </button>
+          </form>
+        </div>
+          
+
+        <div class="flex-1  w-96 h-auto rounded-t-xl bg-[#013220] p-5">
+          <img src="africanfoodimg/bunnychow.jpg" class="h-60 w-full object-cover rounded-t-xl">
+           <h1 class="px-1 font-bold">Bunny Chow</h1>
+          <form class="flex flex-col gap-2 w-sm mt-3">
+            <input id="protein" type="text" placeholder="Number of protein" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <input id="plates" type="text" placeholder="Number of plates" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <button id="add" class="items-start bg-[#FFD700] text-[#006400] rounded text-xs p-1 w-1/4">
+              Add to Cart
+            </button>
+          </form>
+        </div>
+
+        <div class="flex-1  w-96 h-auto rounded-t-xl bg-[#013220] p-5 ">
+          <img src="africanfoodimg/ugali.jpg" class="h-60 w-full object-cover rounded-t-xl">
+          <h1 class="px-1 font-bold">Ugali</h1>
+          <form class="flex flex-col gap-2 w-sm mt-3">
+            <input id="protein" type="text" placeholder="Number of protein" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <input id="plates" type="text" placeholder="Number of plates" class="bg-[#006400] border-[#FFFFFF] text-white text-xs w-40">
+
+            <button id="add" class="items-start bg-[#FFD700] text-[#006400] rounded text-xs p-1 w-1/4">
+              Add to Cart
+            </button>
+          </form>
+        </div>
+      </section>
+  
+
+   <footer class="bg-[#013220] w-full h-auto py-5 px-10 mt-auto grid  lg:grid-cols-4 sm:grid-cols-1 justify-items-center gap-2 text-white" >
+      <div class="flex flex-col">
+        <h3 style="font-family: 'Dancing Script',cursive" class="font-bold text-3xl text-green-500">Chop Chop</h3>
+
+       
+
+        <p class="py-2 text-xs max-w-sm">
+          Follow us on Twitter, Facebook, Instagram and Tiktok
+        </p>
+
+              
+        <div class="flex gap-4 text-md py-10">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-tiktok"></i>
+        </div>
+
+      </div>
+
+      
+      <div class="py-10 flex flex-col" >
+        <p class="text-sm underline decoration-1 decoration-red-500 ">
+          https//chopchop.com
+        </p>
+
+        <nav class="flex flex-col text-xs">
+        <a href="index.html" class="hover:underline decoration-1">Home</a>
+        <a href="about.html" class="hover:underline decoration-1">About Us</a>
+        <a href="contact.html" class="hover:underline decoration-1">Contact Us</a>
+       
+        <div  class="  flex flex-col">
+           <button id="footerdropDownBtn" class="hover:underline decoration-1 text-left">Menu</button>
+
+          <nav id="footerdropDownMenu" class=" flex flex-col text-xs hidden">
+            <a href="african.html" class="hover:underline">African Dishes</a>
+            <a href="continental.html" class="hover:underline">Continental Dishes</a>
+            <a href="chinese.html" class="hover:underline">Chinese Dishes</a>
+            <a href="italian.html" class="hover:underline">Italian Dishes</a>
+          </nav>
+          
+        </div>
+      </nav>
+         <h1 class="font-bold text-lg py-2" >
+        Contact Us
+      </h1>
+
+      <p class="text-sm">
+        chopchop@gmail.com
+      </p>
+        
+      </div>
+
+      <div>
+         
+      <h1 class="font-bold text-md underline decoration-1">
+        Our Services
+      </h1>
+
+      <h1 class=" font-bold text-sm hover:underline decoration-1">
+        Dine-in Service
+      </h1>
+      
+
+      <h1 class="mt- font-bold text-sm hover:underline decoration-1">
+        Takeaway & Packaging
+      </h1>
+      
+
+      <h1 class="mt-2 font-bold text-sm hover:underline decoration-1">
+        Home Delivery
+      </h1>
+      
+
+      <h1 class="mt-2 font-bold text-sm hover:underline decoration-1">
+        Catering Services
+      </h1>
+      
+
+      <h1 class="mt-2 font-bold text-sm hover:underline decoration-1">
+        Special Orders
+      </h1>
+      
+
+      <h1 class="mt-2 font-bold text-sm hover:underline decoration-1">
+        Affordable Meals
+      </h1>
+      
+
+      <h1 class="mt-2 font-bold text-sm hover:underline decoration-1">
+        Online Ordering
+      </h1>
+     
+
+
+    
+      </div>
+
+      <div>
+        <h1 class="font-bold text-md">
+        News Letter
+      </h1>
+      
+      </div>
+      <hr class="col-span-full w-full mt-20">
+      <p class=" col-span-full text-sm text-center w-full">
+        @2025. All rights reserved by princess
+      </p>
+ 
+    </footer>
+  <script src="jquery.js"></script>
+  <script>
+     $("#dropDownBtn").click(function(){
+        $("#dropDownMenu").toggleClass("hidden");
+      });
+
+      $("#hamburger").click(function(){
+        $("#mobileMenu").toggleClass("hidden");
+      });
+
+      $("#mobiledropDownBtn").click(function(){
+        $("#mobiledropDownMenu").toggleClass("hidden");
+      });
+
+   
+    $("#add").click(function(){
+      let protein = $("#protein").val();
+      let plates = $("#plates").val();
+
+      if (protein === "" || plates === ""){
+        alert("fill the above");
+      } else {
+        alert("order placed");
+      }
+    });
+  </script>
+</body>
+</html>
